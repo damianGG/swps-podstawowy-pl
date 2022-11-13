@@ -1,0 +1,301 @@
+[class*=" icon-"],
+[class^=icon-] {
+    font-family: icomoon!important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+.icon-arrow-down:before {
+    content: ""
+}
+
+.icon-arrow-download:before {
+    content: "󩈢"
+}
+
+.icon-team:before {
+    content: ""
+}
+
+.icon-career:before {
+    content: ""
+}
+
+.icon-program:before {
+    content: ""
+}
+
+.icon-award:before {
+    content: ""
+}
+
+.icon-preferences:before {
+    content: ""
+}
+
+.icon-certificate:before {
+    content: ""
+}
+
+.icon-open-letter:before {
+    content: ""
+}
+
+.icon-check-qualities:before {
+    content: ""
+}
+
+.icon-laptop-type:before {
+    content: ""
+}
+
+.icon-download:before {
+    content: ""
+}
+
+.icon-fill-form:before {
+    content: ""
+}
+
+.icon-view-doc:before {
+    content: ""
+}
+
+.icon-guy-with-laptop:before {
+    content: ""
+}
+
+.icon-upload:before {
+    content: ""
+}
+
+.icon-user2:before {
+    content: ""
+}
+
+.icon-phone:before {
+    content: ""
+}
+
+.icon-email:before {
+    content: ""
+}
+
+.icon-kalendarz:before {
+    content: ""
+}
+
+.icon-dzwonek:before {
+    content: ""
+}
+
+.icon-dyplom:before {
+    content: ""
+}
+
+.icon-error:before {
+    content: ""
+}
+
+.icon-fb:before {
+    content: ""
+}
+
+.icon-lupka:before {
+    content: ""
+}
+
+.icon-cheveron:before {
+    content: ""
+}
+
+.icon-punktator:before {
+    content: ""
+}
+
+.icon-mail:before {
+    content: ""
+}
+
+.icon-user:before {
+    content: ""
+}
+
+.icon-close:before {
+    content: ""
+}
+
+.icon-areas:before {
+    content: ""
+}
+
+.icon-publications:before {
+    content: ""
+}
+
+.icon-projects:before {
+    content: ""
+}
+
+.icon-press:before {
+    content: ""
+}
+
+.icon-arrow:before {
+    content: ""
+}
+
+/* .icon-tution:before {
+    content: "\e924";
+    color: #009bdf;
+} */
+
+/* .icon-arrow-down:before {
+  content: "\e922";
+  color: #009bdf;
+} */
+
+/* .icon-download-paper:before {
+    content: "\e923";
+    color: #009bdf;
+}
+.icon-tution:before {
+  content: "\e924";
+  color: #009bdf;
+}
+.icon-arrow-down:before {
+  content: "\e922";
+  color: #009bdf;
+}
+.icon-download-paper:before {
+  content: "\e923";
+  color: #009bdf;
+} */
+
+/* .icon-ikona-miasto:before {
+  content: "\e925";
+  color: #009bdf;
+}
+
+.icon-studia:before {
+  content: "\e926";
+  color: #009bdf;
+}
+.icon-tryb:before {
+  content: "\e927";
+  color: #009bdf;
+}
+.icon-ikona-miasto:before {
+  content: "\e925";
+  color: #009bdf;
+} */
+/* .icon-tution:before {
+  content: "\e924";
+  color: #009bdf;
+} */
+/* .icon-arrow-down:before {
+  content: "\e922";
+  color: #009bdf;
+} */
+/* .icon-download-paper:before {
+  content: "\e923";
+  color: #009bdf;
+} */
+
+/* /// V1 start */
+.icon-studia:before {
+  content: "\e926";
+  color: #009bdf;
+}
+.icon-tryb:before {
+  content: "\e927";
+  color: #009bdf;
+}
+.icon-ikona-miasto:before {
+  content: "\e925";
+  color: #009bdf;
+}
+.icon-na-uczelni:before {
+  content: "\e929";
+  color: #009bdf;
+}
+.icon-arrow-down-open:before {
+  content: "\e928";
+  color: #009bdf;
+}
+.icon-tution:before {
+  content: "\e924";
+  color: #009bdf;
+}
+.icon-arrow-down:before {
+  content: "\e922";
+  color: #009bdf;
+}
+.icon-download-paper:before {
+  content: "\e923";
+  color: #009bdf;
+}
+
+/* //ikonki od Ani START */
+.icon-groups-black-24dp:before {
+  content: "\e937";
+}
+.icon-notification-important-black-24dp:before {
+  content: "\e936";
+}
+.icon-schedule-black-24dp:before {
+  content: "\e935";
+}
+.icon-check-circle-black-24dp:before {
+  content: "\e934";
+}
+.icon-notifications-active-black-24dp:before {
+  content: "\e933";
+}
+.icon-short-arrow-down:before {
+  content: "\e932";
+}
+.icon-ctrl:before {
+  content: "\e931";
+}
+.icon-studia:before {
+  content: "\e926";
+  color: #009bdf;
+}
+.icon-tryb:before {
+  content: "\e927";
+  color: #009bdf;
+}
+.icon-ikona-miasto:before {
+  content: "\e925";
+  color: #009bdf;
+}
+.icon-na-uczelni:before {
+  content: "\e929";
+  color: #009bdf;
+}
+.icon-arrow-down-open:before {
+  content: "\e928";
+  color: #009bdf;
+}
+.icon-tution:before {
+  content: "\e924";
+  color: #009bdf;
+}
+.icon-arrow-down:before {
+  content: "\e922";
+  color: #009bdf;
+}
+.icon-download-paper:before {
+  content: "\e923";
+  color: #009bdf;
+}
+
+/* //ikonki od Ani END*/

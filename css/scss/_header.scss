@@ -1,0 +1,157 @@
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background: #fff;
+  border-bottom: 1px solid var(--grey-border);
+
+  .container {
+    display: flex;
+    height: 85px;
+    align-items: center;
+  }
+
+  .primary-nav {
+    padding: 0;
+    height: 100%;
+
+    ul {
+      margin: 0;
+      height: 100%;
+
+      li {
+        height: 100%;
+        transition: .25s;
+        padding: 0;
+
+        &:before {
+          content: none;
+        }
+
+        &.active {
+          background: #E9F9FF;
+
+          a {
+            color: var(--blue);
+
+            &:hover {
+              opacity: .75;
+            }
+          }
+        }
+
+        a:not([class]) {
+          height: 100%;
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+
+    li {
+      .btn {
+        font-weight: 400;
+        // font-weight: 500;
+        // border-width: 2px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.standard-nav {
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+
+    li {
+      &:nth-child(n) {
+        margin: 0;
+        display: inline-block;
+      }
+
+      a {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 1;
+        text-decoration: none;
+        color: #000;
+        letter-spacing: 0.64px;
+        transition: .25s;
+
+        &.active,
+        &:hover {
+          color: var(--blue);
+        }
+      }
+
+      strong:only-child {
+        display: inline-block;
+        margin: 10px 0;
+      }
+
+      .featured {
+        color: var(--blue);
+
+        i {
+          font-size: 20px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 85px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+// .secondary-nav {
+//
+// }
+
+.tabs-nav {
+  a:not(.btn) {
+    &:before {
+      content: "";
+      background: #fff;
+      display: block;
+      transform: translateY(calc(101% + 20px));
+      transition: .25s;
+      z-index: -1;
+
+      // @include absolute_full_width(-10px, 1px, 1px, -10px);
+      // @include absolute_full_width();
+      @include absolute_full_width(0, 0, 0, -10px);
+      border-radius: 2px 2px 0 0;
+    }
+
+    &.active,
+    &:hover {
+      color: var(--blue);
+
+      &:before {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.secondary-nav {
+  ul {
+    li:nth-child(n) {
+
+    }
+  }
+}

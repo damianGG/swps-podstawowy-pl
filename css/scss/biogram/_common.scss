@@ -1,0 +1,57 @@
+html {scroll-behavior: smooth;}
+body {
+	font-family: var(--primary-font);
+	font-size: 16px;
+	line-height: 32px;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+  margin: 0px auto;
+  counter-reset: nbrs;
+	box-sizing: border-box;
+}
+a {
+	color: var(--link-color);
+	text-decoration: none;
+
+  // &:focus,
+  // &:hover,
+  // &:active {
+  //   text-decoration: underline;
+  // }
+}
+
+img {max-width: 100%}
+
+.biogram-notka a {
+	text-decoration: 			underline;
+}
+.noscroll {
+	overflow: 					hidden;
+}
+#top .container,
+#footer .container,
+.category-list {
+	margin: 					0 auto;
+	width: 						var(--content-width);
+	max-width: 					100%;
+  display: 					flex;
+  padding: 					var(--content-padding);
+  box-sizing: 				border-box;
+}
+
+#footer .inner {
+	display: 					block;
+}
+#footer {
+	background: 				#000;
+	color: 						#fff;
+}
+#footer a {
+	color: 						#fff;
+}
+#footer li {
+	display: 					inline-block;
+	margin: 					0 10px;
+	font-size: 					12px;
+	opacity: 					.75;
+}

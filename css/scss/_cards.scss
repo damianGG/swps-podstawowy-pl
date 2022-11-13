@@ -1,0 +1,771 @@
+.ppl-card {
+  border: 1px solid #EFEFEF;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 0 0 16px;
+  position: relative;
+  background: #fff;
+  align-self: flex-start;
+  display: inline-flex !important;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  width: 100%;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 8px 0;
+
+    &:not(:only-child, .biogram-links) {
+      max-width: calc(100% - 92px);
+    }
+
+    @media (min-width: 600px) {
+      &:not(:only-child, .biogram-links) {
+        max-width: calc(100% - 124px);
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  img {
+    object-fit: cover;
+    width: 108px;
+    height: 108px;
+    margin-right: 16px;
+    border-radius: 2px;
+
+    @media (max-width: 992px) and (min-width: 600px) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media (max-width: 480px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .ppl-title,
+  .tytul {
+    color: #666;
+    font-weight: 300;
+    margin: 0;
+    order: 1;
+
+    @media (min-width: 600px) {
+      padding-right: 55px;
+    }
+  }
+
+  .imie-i-nazwisko {
+    @extend .h5;
+    order: 2;
+    color: #000;
+  }
+
+  h3, .h5 {
+    margin: 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .descr {
+    margin: 0 0 4px;
+    line-height: 1;
+    order: 3;
+
+    &:empty {display: none}
+  }
+
+  .ppl-desc,
+  .bioinfo {
+    font-size: 10px;
+    color: #666;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 4px 0 0;
+    display: inline-block;
+    order: 4;
+  }
+
+  a, span {
+    &.email {
+      right: 40px;
+    }
+  }
+
+  .bio {
+    right: 10px;
+  }
+
+  a.email,
+  span.email,
+  a.bio {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background: #fff;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+
+    &:before {
+      display: inline-block;
+      color: var(--primary-color);
+      font-family: icomoon;
+      line-height: 1;
+      font-size: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  &.no-biogram {
+    a.bio {
+      pointer-events: none;
+
+      &:before {
+        color: #666;
+      }
+
+      @media (max-width: 599px) {display: none;}
+    }
+  }
+
+  &.no-email {
+    .email {
+      pointer-events: none;
+
+      &:before {
+        color: #666;
+      }
+
+      @media (max-width: 599px) {display: none;}
+    }
+  }
+
+  &.no-email.no-biogram .biogram-links {display: none}
+
+  &.no-featured {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .biogram-links {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid #dfdede;
+    margin: 16px 0 0;
+    max-height: 65px;
+    max-width: none;
+    align-self: flex-end;
+
+    a {
+      margin: 8px 0 0;
+      position: static;
+      width: auto;
+      flex: 1;
+
+      &:after {
+        font-family: var(--primary-font);
+        font-size: 10px;
+        vertical-align: middle;
+        color: var(--primary-color);
+      }
+
+      &.email {
+        &:after {
+          content: 'Wyślij wiadomość';
+        }
+      }
+
+      &.bio {
+        &:after {
+          content: 'Zobacz biogram';
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      margin-top: 8px;
+    }
+  }
+
+  .kierownik & {
+    padding: 0;
+    border: none;
+
+    >div {
+      max-width: calc(100% - 110px);
+    }
+
+    img {
+      width: 102px;
+      height: 102px;
+      margin-right: 8px;
+    }
+
+    .email {order: 2;}
+  }
+
+  + .featured-info {
+    border-top: 1px solid #E8F3F8;
+    border-bottom: 1px solid #E8F3F8;
+    margin: 16px 0 0;
+    padding: 16px 0;
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+
+      &:not(:last-child) {
+        margin: 0 0 8px;
+      }
+    }
+
+    strong {
+      font-size: 14px;
+      color: #000;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    >div {
+      padding: 0;
+    }
+  }
+}
+
+.biogramAdv {
+  .field,
+  .biotitleandnames,
+  .bioinfo,
+  .field .label,
+  div.email,
+  .read-more-content {
+    display: none;
+  }
+
+  .tytul, .imie-i-nazwisko {
+  	display: block;
+  }
+
+  .read-more {
+    order: 5;
+    margin-top: auto;
+    letter-spacing: 1.5px;
+  }
+
+  .keynote & {
+    border: none;
+    background: transparent;
+
+    .descr {
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--grey-text);
+    }
+  }
+
+  &.bioinfo {
+
+  }
+}
+
+
+.kierownik {
+  padding: 0 0 32px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  >:not(div) {width: 100%}
+
+  .ppl-card {
+    .bioinfo,
+    .ppl-desc {
+      &:not(:last-child) {
+        margin: 0 0 24px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      flex: 1 0 calc(50% - 12px);
+      max-width: calc(50% - 12px) !important;
+    }
+  }
+}
+
+.news-card {
+  display: flex;
+  margin: 0 0 16px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+
+  a {
+    letter-spacing: 1.8px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  h4 {
+    margin: 8px 0 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.big-card {
+  display: flex !important;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 0 0 24px;
+  transition: 400ms;
+  border: 1px solid #EFEFEF;
+  letter-spacing: 0;
+
+  &.contact-card {
+    flex-wrap: wrap;
+
+    >div {padding: 16px;}
+
+    .expanded-contact {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      width: 100%;
+      background: #F6F6F6;
+      padding: 0 12px;
+      transition: .25s;
+
+      >div {
+        align-self: flex-start;
+        padding: 24px 12px;
+
+        >:first-child {
+          margin-top: 0;
+        }
+      }
+
+      hr {
+        margin: 20px 0;
+        max-width: 50%;
+      }
+
+      h4 + p {font-size: 14px;}
+
+      p {
+        line-height: 1.25;
+        font-size: 12px;
+
+        &.w-i {
+          color: #000;
+
+          i {
+            color: #000;
+            font-size: 14px;
+          }
+        }
+      }
+
+      a[href^="mailto:"] {letter-spacing: 1.75px;}
+    }
+
+    >button {
+      width: 100%;
+      color: var(--primary-color);
+      background: var(--primary-color-opacity);
+      letter-spacing: 1.75px;
+      font-size: 14px;
+      padding: 8px;
+      transition: .25s;
+
+      span {
+        display: inline-block;
+        transform: rotate(90deg);
+        transition: .25s;
+      }
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background: var(--primary-color);
+      }
+
+      &.active {
+        span {
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+        }
+      }
+    }
+
+    p {
+      margin: .75em 0;
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 184px;
+
+      .expanded-contact {
+        display: flex;
+        flex-flow: row nowrap;
+
+        >div {
+          flex: 1 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      >div:first-of-type {
+        padding: 8px;
+
+        a {margin: 0}
+      }
+
+      .contacts {
+        span {
+          display: inline-block;
+          margin: 4px 0 0;
+        }
+      }
+
+      .temp-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.big-ppl {
+    padding: 16px;
+    position: relative;
+
+    >div:first-of-type {padding: 4px 0 0 16px;}
+    a[class*="icon-"] {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      color: var(--primary-color);
+      font-size: 24px;
+    }
+
+    a.email {
+      right: 50px;
+    }
+
+    .title {
+      margin-bottom: 6px;
+      color: var(--grey-text);
+      font-size: 16px;
+    }
+
+    h3 {
+      margin-top: 4px;
+    }
+
+    ul {
+      margin: auto 0 0;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  img {
+    width: 184px;
+    min-height: 184px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+  >div:first-of-type {
+    padding: 16px 16px 16px 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+
+    // &:only-of-type {
+    //   flex: 1;
+    // }
+
+    a {
+      font-size: 14px;
+      color: var(--primary-color);
+
+      &:first-child {
+        h3 {margin-top: 0}
+      }
+    }
+
+    >a {
+      color: #000;
+      letter-spacing: 0;
+      margin-bottom: 30px;
+    }
+
+    >p {
+      &:first-child {
+        margin: 0;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &:only-child {
+      h3 {
+        padding-right: 25%;
+      }
+    }
+  }
+
+  .card-featured-info {
+    width: 100%;
+    color: #fff;
+    padding: 10px 16px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+
+    p {margin: 0}
+
+    p, p>span {
+      color: #fff !important;
+    }
+  }
+
+  .temp-wrapper {
+    background: #F6F6F6;
+  }
+
+  h3 {
+    margin: 24px 0 8px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--grey-text);
+
+    span {
+      color: #000;
+    }
+
+    &:last-child {
+      margin: auto 0 0;
+
+      span {
+        color: #000;
+        display: inline-block;
+      }
+
+      a {
+        &[aria-label] {
+          float: right;
+        }
+      }
+
+      i.icon-arrow {
+        color: var(--primary-color);
+      }
+    }
+
+    &.last-modified {
+      color: var(--grey-text);
+      margin: auto 0 0;
+    }
+
+    &.contacts {
+      color: #000;
+
+      i:not(.icon-arrow) {
+        display: inline-block;
+        margin-right: 8px;
+        color: #000;
+      }
+
+      a {
+        display: inline-block;
+        margin-right: 24px;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  a i {
+    font-size: 14px;
+  }
+
+  time {
+    color: #000;
+    float: right;
+  }
+
+  .top-right {
+    color: var(--grey-text);
+  }
+
+  @media (min-width: 1200px) {
+    .top-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 16px 16px 16px 0;
+    }
+  }
+
+  @media (max-width: 599px) {
+    flex-direction: column;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      // min-height: 200px;
+      min-height: unset;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    >div {
+      padding-left: 16px;
+      position: relative;
+    }
+
+    p:last-child {
+      margin-top: 0;
+      font-size: 12px;
+    }
+
+    .arrow-link {
+      position: absolute;
+      top: -50px;
+      right: -2px;
+      background: #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      // padding: 0 10px;
+
+      i {margin: 0;}
+    }
+  }
+}
+
+.video-card {
+  padding: 8px;
+  border: 1px solid #efefef;
+  display: flex !important;
+  background: #fff;
+  margin: 0 0 var(--content-padding);
+  transition: 400ms;
+
+  img {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  >div {
+    border: none;
+    padding: 12px 16px;
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 16px 0 8px;
+    color: #000;
+  }
+
+  p {
+    color: var(--grey);
+    line-height: 1.5;
+    margin: 0;
+
+    &:first-child {
+      font-size: 14px;
+      color: var(--primary-color);
+      letter-spacing: 1.75px;
+    }
+
+    // &:last-child {
+    //   margin: auto 0 0;
+    //
+    //   span {
+    //     display: inline-block;
+    //     margin: 0 24px;
+    //   }
+    //
+    //   i {
+    //     float: right;
+    //     color: var(--primary-color);
+    //   }
+    // }
+  }
+
+  @media (max-width: 768px) {
+    flex-flow: column;
+
+    >img {
+      width: 100%;
+      height: 160px;
+    }
+
+    >div {
+      padding: 16px 0;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

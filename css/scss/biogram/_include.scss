@@ -1,0 +1,8 @@
+@mixin container(){
+  margin: 0 auto;
+  width: var(--content-width);
+  max-width: 100%;
+  display: flex;
+  padding: var(--content-padding);
+  box-sizing: border-box;
+}
