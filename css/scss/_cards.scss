@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // padding: 8px 0;
 
+    // padding: 8px 0;
     &:not(:only-child, .biogram-links) {
       max-width: calc(100% - 92px);
     }
@@ -70,7 +70,8 @@
     color: #000;
   }
 
-  h3, .h5 {
+  h3,
+  .h5 {
     margin: 4px 0;
     font-size: 16px;
     font-weight: 600;
@@ -82,7 +83,9 @@
     line-height: 1;
     order: 3;
 
-    &:empty {display: none}
+    &:empty {
+      display: none
+    }
   }
 
   .ppl-desc,
@@ -97,7 +100,8 @@
     order: 4;
   }
 
-  a, span {
+  a,
+  span {
     &.email {
       right: 40px;
     }
@@ -142,7 +146,9 @@
         color: #666;
       }
 
-      @media (max-width: 599px) {display: none;}
+      @media (max-width: 599px) {
+        display: none;
+      }
     }
   }
 
@@ -154,11 +160,15 @@
         color: #666;
       }
 
-      @media (max-width: 599px) {display: none;}
+      @media (max-width: 599px) {
+        display: none;
+      }
     }
   }
 
-  &.no-email.no-biogram .biogram-links {display: none}
+  &.no-email.no-biogram .biogram-links {
+    display: none
+  }
 
   &.no-featured {
     padding: 0;
@@ -223,10 +233,12 @@
       margin-right: 8px;
     }
 
-    .email {order: 2;}
+    .email {
+      order: 2;
+    }
   }
 
-  + .featured-info {
+  +.featured-info {
     border-top: 1px solid #E8F3F8;
     border-bottom: 1px solid #E8F3F8;
     margin: 16px 0 0;
@@ -259,6 +271,7 @@
 }
 
 .biogramAdv {
+
   .field,
   .biotitleandnames,
   .bioinfo,
@@ -268,8 +281,9 @@
     display: none;
   }
 
-  .tytul, .imie-i-nazwisko {
-  	display: block;
+  .tytul,
+  .imie-i-nazwisko {
+    display: block;
   }
 
   .read-more {
@@ -289,11 +303,8 @@
     }
   }
 
-  &.bioinfo {
-
-  }
+  &.bioinfo {}
 }
-
 
 .kierownik {
   padding: 0 0 32px;
@@ -304,9 +315,12 @@
   flex-flow: row wrap;
   justify-content: space-between;
 
-  >:not(div) {width: 100%}
+  >:not(div) {
+    width: 100%
+  }
 
   .ppl-card {
+
     .bioinfo,
     .ppl-desc {
       &:not(:last-child) {
@@ -355,10 +369,16 @@
   border: 1px solid #EFEFEF;
   letter-spacing: 0;
 
+  p a span {
+    color: var(--primary-color);
+  }
+
   &.contact-card {
     flex-wrap: wrap;
 
-    >div {padding: 16px;}
+    >div {
+      padding: 16px;
+    }
 
     .expanded-contact {
       height: 0;
@@ -383,7 +403,9 @@
         max-width: 50%;
       }
 
-      h4 + p {font-size: 14px;}
+      h4+p {
+        font-size: 14px;
+      }
 
       p {
         line-height: 1.25;
@@ -399,7 +421,9 @@
         }
       }
 
-      a[href^="mailto:"] {letter-spacing: 1.75px;}
+      a[href^="mailto:"] {
+        letter-spacing: 1.75px;
+      }
     }
 
     >button {
@@ -453,7 +477,9 @@
       >div:first-of-type {
         padding: 8px;
 
-        a {margin: 0}
+        a {
+          margin: 0
+        }
       }
 
       .contacts {
@@ -473,7 +499,10 @@
     padding: 16px;
     position: relative;
 
-    >div:first-of-type {padding: 4px 0 0 16px;}
+    >div:first-of-type {
+      padding: 4px 0 0 16px;
+    }
+
     a[class*="icon-"] {
       position: absolute;
       right: 16px;
@@ -523,13 +552,14 @@
     // &:only-of-type {
     //   flex: 1;
     // }
-
     a {
       font-size: 14px;
       color: var(--primary-color);
 
       &:first-child {
-        h3 {margin-top: 0}
+        h3 {
+          margin-top: 0
+        }
       }
     }
 
@@ -543,6 +573,7 @@
       &:first-child {
         margin: 0;
       }
+
       &:nth-last-child(2) {
         margin-bottom: 24px;
       }
@@ -559,7 +590,8 @@
     width: 100%;
     color: #fff;
     padding: 10px 16px;
-    background: var(--primary-color);
+    // background: var(--primary-color);
+    background: #f3f3f3;
     display: flex;
     align-items: center;
 
@@ -568,9 +600,13 @@
       margin-right: 8px;
     }
 
-    p {margin: 0}
+    p {
+      margin: 0;
+      color: #5e5e5f !important;
+    }
 
-    p, p>span {
+    p,
+    p>span {
       color: #fff !important;
     }
   }
@@ -692,9 +728,11 @@
       width: 50px;
       height: 50px;
       font-size: 24px;
-      // padding: 0 10px;
 
-      i {margin: 0;}
+      // padding: 0 10px;
+      i {
+        margin: 0;
+      }
     }
   }
 }

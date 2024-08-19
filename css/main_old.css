@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 			"GeomanistBold";
+	src: 					url("../../../media/geomanist/Geomanist-Bold.otf");
+}
+@font-face {
+    font-family: 			"GeomanistBook";
+	src: 					url("../../../media/geomanist/Geomanist-Book.otf");
+}
+@font-face {
+    font-family: 			"GeomanistMedium";
+	src: 					url("../../../media/geomanist/Geomanist-Medium.otf");
+}
+@font-face {
+    font-family: 			"GeomanistReg";
+	src: 					url("../../../media/geomanist/Geomanist-Regular.otf");
+}
+@font-face {
+    font-family: 			"GeomanistLight";
+	src: 					url("../../../media/geomanist/Geomanist-Light.otf");
+}
+:root {
+
+	--text-color:  			#5e5e5f;
+	--bg-color: 			#fbfbfb;
+	--nd-color: 			#d9d9d9;
+
+	--primary-font: 		'GeomanistReg', sans-serif;
+	--secondary-font: 		'Lato', sans-serif;
+	--bold-font: 			'GeomanistBold', sans-serif;
+	--bold-font-book: 		'GeomanistBook', sans-serif;
+	--bold-font-medium: 	'GeomanistMedium', sans-serif;
+	--bold-font-reg: 		'GeomanistReg', sans-serif;
+	--bold-font-light: 		'GeomanistLight', sans-serif;
+
+	--link-color:      	 	#009bdf;
+	--gold: 				#af9870;
+
+	--main-space:			20px;
+
+	--content-width: 		1280px;
+
+
+	--inv-bg-color: 		#000;
+	--inv-text-color: 		#fff;
+
+
+	--strong-color: 		#000;
+
+
+}
+/*** nadpisanie zmiennych dla media queries ***/
+@media (min-width:1980px) {
+	:root {
+		--content-width: 1600px;
+		--content-margin: 0 auto;
+	}
+}
+
+
+body {
+	font-family: 				var(--primary-font);
+	font-size: 					16px;
+	line-height: 				32px;
+	color: 						var(--text-color);
+	background-color: 			var(--bg-color);
+  	margin:						0px auto;
+    counter-reset: 				nbrs;
+	box-sizing: 				border-box;
+}
+a {
+	color: 						var(--link-color);
+	text-decoration:  			none;
+}
+
+.biogram-notka a {
+	text-decoration: 			underline;
+}
+#top {
+	background: 				#fff;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #CDCDCD;
+}
+.noscroll {
+	overflow: 					hidden;
+}
+#top .inner,
+#footer .inner,
+.category-list {
+	margin: 					0 auto;
+	width: 						var(--content-width);
+	max-width: 					100%;
+    display: 					flex;
+    padding: 					32px;
+    box-sizing: 				border-box;
+}
+.video-container {
+    position: 					relative;
+    padding-bottom: 			56.25%;
+    height: 					0;
+    overflow: 					hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: 				absolute;
+    top: 					0;
+    left: 					0;
+    width: 					100%;
+    height: 				100%;
+}
+#footer .inner {
+	display: 					block;
+}
+#footer {
+	background: 				#000;
+	color: 						#fff;
+}
+#footer a {
+	color: 						#fff;
+}
+#footer li {
+	display: 					inline-block;
+	margin: 					0 10px;
+	font-size: 					12px;
+	opacity: 					.75;
+}

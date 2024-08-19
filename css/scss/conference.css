@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+  .conference article > .container:not(.section-hero) {
+    display: grid;
+    grid-template-columns: 336px calc(100% - 400px);
+    column-gap: 104px; }
+  .conference aside {
+    position: sticky;
+    top: 140px; } }
+.conference aside {
+  align-self: start; }
+  .conference aside .info-box {
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0px 20px 40px #0000000D; }
+  .conference aside h2 {
+    font-size: 32px; }
+  .conference aside p {
+    margin: 4px 0;
+    line-height: 1.25; }
+.conference .wrapper-box {
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0px 20px 40px #0000000D;
+  letter-spacing: 0; }
+  @media (min-width: 1200px) {
+    .conference .wrapper-box {
+      padding: 45px 80px; } }
+  .conference .wrapper-box.black {
+    color: #fff;
+    background: #000; }
+    .conference .wrapper-box.black p, .conference .wrapper-box.black strong {
+      color: #fff; }
+  .conference .wrapper-box p {
+    color: var(--grey-text);
+    line-height: 2;
+    margin: 0 0 40px; }
+    .conference .wrapper-box p:last-child {
+      margin: 0; }

@@ -13,7 +13,9 @@ Author: SWPS - Konrad Traczyk
     .section-text {
       flex-direction: column;
 
-      &:first-of-type .title:first-child {padding-top: 80px}
+      &:first-of-type .title:first-child {
+        padding-top: 80px
+      }
 
       aside {
         margin-top: 24px;
@@ -44,8 +46,14 @@ Author: SWPS - Konrad Traczyk
         flex-flow: row wrap;
         column-gap: 100px;
 
-        >.breadcrumbs {width: 100%}
-        >div:not([class]) {max-width: 66.66666%; flex: 2}
+        >.breadcrumbs {
+          width: 100%
+        }
+
+        >div:not([class]) {
+          max-width: 66.66666%;
+          flex: 2
+        }
 
         aside {
           margin: 0;
@@ -86,7 +94,9 @@ Author: SWPS - Konrad Traczyk
       }
     }
 
-    >h2, >h3, >h4 {
+    >h2,
+    >h3,
+    >h4 {
       margin: 80px 0 32px;
     }
   }
@@ -141,7 +151,9 @@ Author: SWPS - Konrad Traczyk
   .lead {
     font-weight: 700;
 
-    strong {font-weight: 600}
+    strong {
+      font-weight: 600
+    }
   }
 
   .fullsize-thumbnail {
@@ -207,10 +219,12 @@ Author: SWPS - Konrad Traczyk
   }
 
   @media (min-width: 1200px) {
-     div.breadcrumbs {
+    div.breadcrumbs {
       margin: 0 0 40px;
 
-      ul.breadcrumbs {margin: 0}
+      ul.breadcrumbs {
+        margin: 0
+      }
     }
   }
 
@@ -332,6 +346,10 @@ Author: SWPS - Konrad Traczyk
     top: 85px;
     position: sticky;
   }
+}
+
+.container.event-info-wrapper {
+  padding: 18px 24px;
 }
 
 .event-info-wrapper {

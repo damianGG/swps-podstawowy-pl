@@ -1,0 +1,351 @@
+.process-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+
+    img {
+        width: 60%;
+    }
+}
+
+#mauticform_zapytajoeksperta_h1 {
+    margin-bottom: 41px;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.mauticform-page-1 {
+    max-width: 50rem;
+    position: relative;
+
+    #mauticform_zapytajoeksperta_wybierz_forme_kontaktu {
+        display: block;
+        width: auto;
+
+        >label {
+            display: block;
+        }
+
+        .mauticform-checkboxgrp-row {
+            padding: 8px 16px;
+            min-height: 2rem;
+            margin-bottom: 8px;
+            margin-right: 4px;
+
+            label {
+                margin-bottom: 0;
+                margin-right: 0;
+
+                span {
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    line-height: 12px;
+                    color: #0C78C1;
+                }
+            }
+        }
+
+        .mauticform-checkboxgrp-row.active {
+            padding: 8px 16px;
+            min-height: 2rem;
+            margin-bottom: 8px;
+            background-color: var(--link-color);
+
+            label {
+                margin-bottom: 0;
+                margin-right: 0;
+
+                span {
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    line-height: 12px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #mauticform_zapytajoeksperta_opisz_temat_zapytania {
+        display: flex;
+        flex-direction: column;
+
+        .mauticform-helpmessage {
+            align-self: flex-start;
+            color: #707070;
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .mauticform-helpmessage {
+                white-space: pre-line;
+            }
+        }
+
+        #mauticform_label_zapytajoeksperta_opisz_temat_zapytania {
+            min-width: none;
+            max-width: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 40px;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        #mauticform_input_zapytajoeksperta_opisz_temat_zapytania {
+            margin-top: 28px;
+            width: 31.25rem;
+        }
+
+        @media screen and (max-width: 1200px) {
+            #mauticform_input_zapytajoeksperta_opisz_temat_zapytania {
+                margin-top: 28px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.mauticform-page-2 {
+    #mauticform_input_zapytajoeksperta_h2 {
+        h2 {
+            font-size: 1.5rem;
+            letter-spacing: 0;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #707070;
+        }
+    }
+
+    #mauticform_zapytajoeksperta_wybierz_przedzial_czasowy {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+
+        span {
+            align-self: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 19.5rem;
+        }
+    }
+
+    #mauticform_zapytajoeksperta_podaj_termin_emisjipublik {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        margin-bottom: 2rem;
+
+        span {
+            align-self: flex-start;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        input {
+            width: 19.5rem;
+        }
+    }
+}
+
+#mauticform_zapytajoeksperta_next {
+    :first-child {
+        background-color: white;
+        color: var(--primary-color);
+        margin-right: 14px;
+    }
+}
+
+.mauticform-page-3 {
+    .mauticform-row {
+        display: flex;
+        flex-direction: column;
+
+        .mauticform-errormsg {
+            left: 0;
+        }
+
+        .mauticform-input {
+            width: 31.25rem;
+        }
+    }
+
+    .mauticform-checkboxgrp {
+        width: 51.25rem;
+
+        .value {
+            font-size: 12px;
+            color: #707070;
+            line-height: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: auto;
+    }
+}
+
+#mauticform_zapytajoeksperta_message {
+    background-color: #FBFBFB;
+    border: none;
+    position: relative;
+
+    //margin-bottom: 15rem;
+    .thank-you-message {
+        width: 30rem;
+    }
+
+    .mail {
+        position: absolute;
+        right: 0;
+        bottom: -8rem;
+    }
+
+    .pos-relative {
+        position: relative;
+    }
+}
+
+.mauticform-innerform {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.speaker-photo {
+    position: absolute;
+    z-index: 10;
+    right: -10rem;
+    top: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .speaker-photo {
+        display: none;
+    }
+}
+
+#mauticform_zapytajoeksperta_next3 {
+    margin-top: 1.5rem;
+
+    #mauticform_zapytajoeksperta_submit {
+        text-align: left !important;
+        display: inline;
+
+        button {
+            padding-left: 0;
+            padding-right: 0;
+            width: 9rem !important;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+
+    button {
+        display: inline-block;
+        background-color: white;
+        color: var(--primary-color);
+    }
+
+    display: flex;
+}
+
+.expert-bio {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 5rem;
+        margin-right: 1rem;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    div {
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            letter-spacing: 0;
+            font-weight: 600;
+        }
+
+        .big-name-surname {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 800;
+        }
+    }
+}
+
+#mauticform_newsletter_wybierz_forme_kontaktu .mauticform-checkboxgrp-row {
+    padding: 8px 16px;
+    min-height: 2rem;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+
+#mauticform_newsletter_wybierz_forme_kontaktu .mauticform-checkboxgrp-row.active {
+    background-color: var(--link-color);
+}
+
+#mauticform_newsletter_wybierz_forme_kontaktu .mauticform-checkboxgrp-row label {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+#mauticform_newsletter_wybierz_forme_kontaktu>label {
+    display: block;
+}
+
+#mauticform_newsletter_html {
+    margin-top: 3rem;
+}
+
+.mauticform-checkboxgrp {
+    width: 51.25rem;
+
+    .value {
+        font-size: 12px !important;
+        color: #707070 !important;
+        line-height: 15px !important;
+    }
+}
+
+#mauticform_newsletter_email_consent {
+    margin-top: 3rem;
+}
+
+.mauticform-required.mauticform-row {
+    display: flex;
+    flex-direction: column;
+    max-width: 51.25rem
+}
+
+#mauticform_newsletter_wybierz_forme_kontaktu {
+    display: block;
+}
+
+#mauticform_newsletter_submit {
+    margin-top: 2rem;
+
+    button {
+        float: left;
+    }
+}
+
+#mauticform_wrapper_newsletter {
+    margin-bottom: 10rem;
+}

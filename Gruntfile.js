@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         sass: {
             prod: {
@@ -7,6 +7,7 @@ module.exports = function(grunt) {
                 },
 
                 files: {
+                    "css/podyplomowka.css": "css/scss/podyplomowka.scss",
                     "css/biogram.css": "css/scss/biogram/biogram.scss",
                     "css/project.css": "css/scss/project.scss",
                     "css/sections.css": "css/scss/sections.scss",
@@ -16,12 +17,17 @@ module.exports = function(grunt) {
                     "css/search-results.css": "css/scss/search-results.scss",
                     "css/landing.css": "css/scss/landing.scss",
                     "css/main.css": "css/scss/main.scss",
+                    "css/forms.css": "css/scss/forms.scss",
+                    "css/main-header-footer.min.css": "css/scss/main-header-footer.scss",
                     "css/mydlo.css": "css/scss/mydlo.scss",
                     "css/learning.min.css": "css/scss/learning.scss",
                     "css/centrum-prasowe-filters.min.css": "css/scss/centrum-prasowe-filters.scss",
                     "css/mautic-form.min.css": "css/scss/mautic-form.scss",
                     "css/cp_contact.min.css": "css/scss/cp_contact.scss",
-                    "css/centrum-prasowe.css": "css/scss/centrum-prasowe.scss"
+                    "css/centrum-prasowe.css": "css/scss/centrum-prasowe.scss",
+                    "css/new-front-page.css": "css/scss/new-front-page.scss",
+                    "css/filterResultsV2.css": "css/scss/filter-results-v2.scss",
+                    "css/filterResults.css": "css/scss/filter-results.scss"
                 }
             },
         },
@@ -32,6 +38,12 @@ module.exports = function(grunt) {
             },
             prod: {
                 files: {
+                    "js/dist/sections.min.js": [
+                        "js/src/sections.js",
+                    ],
+                    // "js/dist/sections.min.js": [
+                    //     "js/src/new-sections.js",
+                    // ],
                     "js/dist/mydlo.js": [
                         "js/src/mydlo.js",
                     ],
@@ -43,9 +55,6 @@ module.exports = function(grunt) {
                     ],
                     "js/dist/project.min.js": [
                         "js/src/project.js",
-                    ],
-                    "js/dist/sections.min.js": [
-                        "js/src/sections.js",
                     ],
                     "js/dist/single-article.min.js": [
                         "js/src/single-article.js",
@@ -65,6 +74,11 @@ module.exports = function(grunt) {
                         "js/vendor/slick-filter.js",
                         "js/vendor/what-input.min.js",
                     ],
+                    "js/dist/header-footer-main.min.js": [
+                        "js/src/main/search.js",
+                        "js/src/main/navigation.js",
+                        "js/src/main.js",
+                    ]
                 },
             },
         },
@@ -73,7 +87,7 @@ module.exports = function(grunt) {
             options: {
                 map: false, // inline sourcemaps
                 processors: [
-                    require('autoprefixer')(), // add vendor prefixes
+                    // require('autoprefixer')(), // add vendor prefixes
                     require('postcss-pxtorem')({
                         rootValue: 16,
                         unitPrecision: 5,
@@ -86,11 +100,34 @@ module.exports = function(grunt) {
                     require('cssnano')(),
                 ]
             },
+
+
+            podyplomowka: {
+                files: {
+                    "css/podyplomowka.css": ["css/podyplomowka.css"],
+                }
+            },
+
+
             biogram: {
                 files: {
                     "css/biogram.css": ["css/biogram.css"],
                 }
             },
+
+
+            filterResults2: {
+                files: {
+                    "css/filterResultsV2.css": ["css/filterResultsV2.css"],
+                }
+            },
+            filterResults: {
+                files: {
+                    "css/filterResults.css": ["css/filterResults.css"],
+                }
+            },
+
+
             mydlo: {
                 files: {
                     "css/mydlo.css": ["css/mydlo.css"],
@@ -152,11 +189,17 @@ module.exports = function(grunt) {
             options: {
                 log: false
             },
-            // centrum_prasowe: {
+            // filterResults: {
             //     files: {
-            //         "css/centrum-prasowe-filters.css": ["css/centrum-prasowe-filters.css"],
+            //         "css/filter-results-v2.css": ["css/filter-results-v2.css"],
             //     }
             // },
+            podyplomowka: {
+                files: {
+                    "css/podyplomowka.css": ["css/podyplomowka.css"],
+                }
+            },
+
             biogram: {
                 files: {
                     "css/biogram.css": ["css/biogram.css"],

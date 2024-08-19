@@ -1,0 +1,577 @@
+@media only screen and (max-width: 1200px) {
+    .section-tabs {
+        width: 100%;
+    }
+
+
+
+
+    [id^="tab0"],
+    [id^="tab1"],
+    [id^="tab2"],
+    [id^="tab3"],
+    [id^="tab4"],
+    [id^="tab5"] {
+        >a {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ECECEC;
+            padding: 8px;
+            /* padding-left: 8px; */
+            align-items: center;
+            margin-bottom: 8px;
+
+            span {
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #tab2.section {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .section-banner .banner-card header h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 0;
+    }
+
+    .section-banner .banner-card>div:first-of-type {
+        padding: 16px;
+        height: auto;
+    }
+
+    .podyplomowe {
+        .section-banner {
+            padding-top: 16px;
+
+            .banner-card {
+                .btn.btn-large {
+                    display: none;
+                }
+
+                .download-box {
+                    flex-direction: column;
+                    row-gap: 8px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+
+                .info-wrapper {
+                    text-indent: -25px;
+                    padding-left: 25px;
+                }
+
+                header p {
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .study-banner {
+        padding: 16px;
+        margin-top: 16px;
+        height: 100px;
+        background-position: bottom;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 0;
+        }
+    }
+
+    //kadra
+    .podyplomowe .card-wrapper.manager-block {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    //dlaczego warto start 
+    .grid-3-9 {
+        display: block;
+
+        img {
+            height: 374px;
+            width: 100%;
+            object-fit: contain;
+            margin-bottom: 24px;
+        }
+    }
+
+    //aditional-info
+    .additional-info {
+        display: grid;
+        grid-template-columns: 90% 10%;
+
+        .plus-button {
+            margin-right: 0;
+        }
+    }
+
+    //dlaczego warto end 
+    //cytat
+    .img-quote-warapper {
+        display: block;
+        padding-top: 76px;
+        position: relative;
+        margin-top: 84px;
+        padding-bottom: 76px;
+
+        >img {
+            width: 104px;
+            height: 104px;
+            position: absolute;
+            top: -15%;
+            left: 35%;
+        }
+    }
+
+    //cytat end 
+    .two-columns {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        margin-top: 21px;
+    }
+
+    //adressaci
+    //slider-fullpagea
+    .slider-full-page.slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .slider-full-page .slick-list.draggable {
+        height: 600px;
+    }
+
+    .slider-full-page {
+        button {
+            display: none !important;
+        }
+
+        .recomendation {
+            >div {
+                padding-left: 16px;
+                margin-left: 0;
+                padding-right: 16px;
+                padding-bottom: 68px;
+
+                .text {
+                    margin-top: 76px;
+                    font-size: 20px;
+                    padding-right: 0;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+
+                    a {
+                        display: block;
+                    }
+                }
+
+                .author {
+                    font-weight: 600;
+                    margin-top: 0;
+                    color: black;
+                }
+
+                .title {
+                    margin-top: -7px;
+                }
+            }
+
+            >img {
+                width: 104px;
+                height: 104px;
+                margin: 0 auto;
+                transform: translatey(50%)
+            }
+        }
+    }
+
+    //slider-fullpagea koniec
+    #aside-toggle-button {
+        z-index: 100;
+        background-color: var(--primary-color);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    aside {
+        z-index: 18;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* Rozmiar aside */
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        transition: left 0.3s ease-in-out;
+        /* Animacja wysuwania */
+        overflow-y: auto;
+
+        /* Obsługa scrolla, gdy treść jest za długa */
+    }
+
+    .podyplomowe .secondary-sections aside {
+        margin-top: 0;
+        top: 0;
+        height: 100vh;
+    }
+
+    .podyplomowe .secondary-sections aside>div {
+        top: inherit;
+    }
+
+    .main-img {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 10px
+    }
+
+    #cboxLoadedContent img {
+        width: 104px;
+        height: 104px;
+    }
+
+    #cboxLoadedContent .read-more-content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    //slider pionowy 
+    .horizontal-list {
+        display: flex;
+        flex-direction: column;
+
+        .info-wrapper {
+            padding: 16px;
+            border-top: 0.1875rem solid #0c78bf;
+            border-left: none;
+        }
+
+        .btn.btn-default {
+            width: 100%;
+        }
+
+        .points {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+        }
+
+        .points ol {
+            display: contents;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            counter-reset: list-counter;
+        }
+
+        .points li {
+            width: 50px;
+            /* Modyfikuj według potrzeb */
+            height: 50px;
+            /* Modyfikuj według potrzeb */
+            border-radius: 50%;
+            background-color: var(--primary-color-opacity);
+            /* Modyfikuj według potrzeb */
+            // text-indent: -9999px; /* Ukrywa tekst */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .points li.active {
+            background-color: var(--primary-color);
+            color: white;
+
+            /* Modyfikuj według potrzeb */
+            img {
+                display: block;
+                height: 36px;
+                transition: height 0.5s;
+            }
+        }
+
+        .points li img {
+            position: absolute;
+            top: 112%;
+            transform: rotate(90deg);
+            position: absolute;
+            height: 0px;
+            right: 11px;
+            width: 30px;
+        }
+
+        .points li::before {
+            display: none;
+        }
+
+        .points li::after {
+            display: none;
+        }
+    }
+
+    .img-bgd {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 24px;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    .horizontal-slider {
+        padding: 16px;
+
+        .menu-wrapper {
+            margin-right: 20px;
+            padding-left: 1rem;
+
+            .left {
+                left: -4px;
+                ;
+            }
+
+            .right {
+                right: -24px;
+            }
+        }
+    }
+
+    .upper-text {
+        background-color: initial;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        transform: translate(0, 0);
+        margin-bottom: 0px;
+        padding-left: 0;
+
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    .section-title {
+        display: none;
+    }
+
+    //program-studiow 
+    .thematic-block {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .title {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        .sub-section-title {
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 1rem;
+        }
+
+        .list {
+            padding-left: 16px;
+        }
+
+        .grey-text3 {
+            margin-top: 0;
+        }
+    }
+
+    .podyplomowe .card-wrapper.manager-block {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    #tab2 {
+        margin-top: 0;
+
+        .section-tabs {
+            margin-top: 0;
+        }
+    }
+
+    #tab4 {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .download-section {
+        margin-bottom: 96px;
+
+        .btn {
+            line-height: 1.5;
+            padding-left: 1.5rem;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        ul li a {
+            line-height: 24px;
+        }
+    }
+
+
+
+    .points ol li {
+        list-style-type: none;
+        position: relative;
+    }
+
+    .points ol li::before {
+        content: attr(data-number);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .points ol li img,
+    .points ol li span {
+        display: none;
+    }
+
+    .gallery {
+        .slick-arrow {
+            display: none !important;
+        }
+
+        p {
+            float: none;
+            margin-left: auto;
+        }
+    }
+
+    .gallery .slick-slide img {
+        // height: min-content !important;
+    }
+
+
+
+    #colorbox {
+        &.ppl-lightbox .close {
+            top: 1rem;
+        }
+
+        .read-more-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        left: 0 !important;
+        top: 0px !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow: inherit;
+        position: fixed;
+    }
+
+    #cboxContent {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #cboxWrapper {
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #cboxLoadedContent {
+        & .read-more-content .h4 {
+            margin-top: 0;
+        }
+
+        & .read-more-content img {
+            position: initial;
+            margin-right: 0;
+            top: 1.375rem;
+        }
+
+        & p {
+            min-height: inherit !important;
+        }
+
+        padding-top: 3.5rem !important;
+        width: 90% !important;
+        height: 100vh !important;
+    }
+
+    #kontakt.article-footer p a:not([href^="tel:"]) {
+        overflow-wrap: anywhere;
+    }
+
+    .czesne>div {
+        width: 95% !important;
+    }
+
+    :is(.mauticform-text, .mauticform-textarea, .mauticform-email, .mauticform-select, .mauticform-tel, .mauticform-date) {
+        display: block;
+    }
+
+
+    #tab5 .section-tabs {
+        margin-top: 0;
+    }
+
+    .podyplomowe .secondary-sections {
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+    }
+
+    .download-section .btn {
+        line-height: 1.3;
+    }
+
+    a[name="stayincontactform"] {
+        display: none !important;
+    }
+
+    a[name="finansowanie"] {
+        display: none !important;
+    }
+
+
+    #tab1 .grid-3-9 {
+        .grey-text3 {
+            margin-top: 16px;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    [id^="tab10"] a {
+        display: none;
+    }
+
+}

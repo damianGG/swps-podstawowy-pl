@@ -1,0 +1,367 @@
+/*!
+Author: SWPS - Konrad Traczyk
+*/
+.fields-container {
+  display: none; }
+
+.projekt-naglowek {
+  background: #fff;
+  border-bottom: 1px solid #cdcdcd;
+  position: relative;
+  z-index: 5; }
+  .projekt-naglowek > .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 100%;
+    width: var(--content-width);
+    padding: var(--content-padding);
+    box-sizing: border-box;
+    min-height: calc(100vh - 85px); }
+    @media (min-width: 1200px) {
+      .projekt-naglowek > .container > div {
+        flex: 1 0 50%; } }
+    @media (max-width: 1199px) {
+      .projekt-naglowek > .container {
+        align-items: flex-start;
+        flex-direction: column-reverse; }
+        .projekt-naglowek > .container > div {
+          padding-bottom: 24px; } }
+  .projekt-naglowek .tags-wrapper .btn {
+    margin-right: 8px; }
+  .projekt-naglowek .projecttype {
+    margin-right: 12px; }
+    .projekt-naglowek .projecttype:first-letter {
+      text-transform: uppercase; }
+  .projekt-naglowek .status {
+    margin-top: 16px;
+    color: var(--primary-color);
+    font-size: 12px; }
+    @media (min-width: 1200px) {
+      .projekt-naglowek .status {
+        margin-top: 80px; } }
+  .projekt-naglowek .title {
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    line-height: 20px; }
+    .projekt-naglowek .title.solid {
+      font-size: 21px;
+      line-height: 32px;
+      display: block;
+      font-weight: 700; }
+    .projekt-naglowek .title .lead {
+      font-size: 56px;
+      line-height: 64px;
+      display: block;
+      font-weight: 700; }
+    @media (min-width: 1200px) {
+      .projekt-naglowek .title {
+        max-width: 80%; } }
+  .projekt-naglowek .title,
+  .projekt-naglowek .value {
+    color: #000; }
+  .projekt-naglowek .value {
+    font-weight: 700; }
+  .projekt-naglowek .other {
+    margin-top: 26px;
+    font-size: 14px; }
+  .projekt-naglowek .finance > div,
+  .projekt-naglowek .other > div {
+    margin-top: 8px; }
+  .projekt-naglowek .kierownik {
+    margin: 40px 0;
+    display: flex;
+    gap: 12px; }
+    .projekt-naglowek .kierownik img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover; }
+    .projekt-naglowek .kierownik div {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1; }
+    .projekt-naglowek .kierownik > div {
+      display: flex;
+      gap: 10px;
+      color: var(--text-color); }
+    .projekt-naglowek .kierownik > div > div {
+      display: flex;
+      flex-direction: column;
+      height: 50px;
+      justify-content: space-between; }
+    .projekt-naglowek .kierownik .btn,
+    .projekt-naglowek .kierownik .email,
+    .projekt-naglowek .kierownik .bioinfo,
+    .projekt-naglowek .kierownik .prawnik-trawnik {
+      display: none; }
+  .projekt-naglowek .okres-realizacji .value {
+    color: var(--primary-color); }
+    .projekt-naglowek .okres-realizacji .value:not(:last-child):after {
+      content: ', ';
+      color: #000; }
+  .projekt-naglowek .jednostka a {
+    color: #000; }
+    .projekt-naglowek .jednostka a i {
+      color: var(--primary-color); }
+
+img.cover {
+  object-fit: cover;
+  object-position: center;
+  flex: 0 1 auto; }
+  @media (min-width: 600px) {
+    img.cover {
+      width: 400px;
+      height: 400px; } }
+  @media (min-width: 1200px) {
+    img.cover {
+      width: 600px;
+      height: 600px; } }
+
+div[itemprop=articleBody] > .container {
+  padding: 0 var(--content-padding);
+  margin: 0 auto;
+  width: var(--content-width);
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative; }
+  div[itemprop=articleBody] > .container .breadcrumbs a {
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    hyphens: auto; }
+  div[itemprop=articleBody] > .container h2,
+  div[itemprop=articleBody] > .container h3,
+  div[itemprop=articleBody] > .container h4 {
+    color: #000;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    font-weight: 600; }
+    @media (min-width: 1200px) {
+      div[itemprop=articleBody] > .container h2,
+      div[itemprop=articleBody] > .container h3,
+      div[itemprop=articleBody] > .container h4 {
+        padding-top: 80px; } }
+  div[itemprop=articleBody] > .container h2,
+  div[itemprop=articleBody] > .container h3.duzy {
+    font-size: 36px;
+    line-height: 48px; }
+    div[itemprop=articleBody] > .container h2 + h3,
+    div[itemprop=articleBody] > .container h3.duzy + h3 {
+      padding-top: 0; }
+    @media (max-width: 767px) {
+      div[itemprop=articleBody] > .container h2,
+      div[itemprop=articleBody] > .container h3.duzy {
+        font-size: 24px;
+        line-height: 32px; } }
+  div[itemprop=articleBody] > .container > .sidebar {
+    max-width: 350px;
+    padding: var(--content-padding) var(--content-padding) var(--content-padding) 0;
+    transform: translateY(-55%);
+    opacity: 0;
+    transition: .5s ease-out;
+    visibility: hidden; }
+    div[itemprop=articleBody] > .container > .sidebar.shown {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1; }
+    div[itemprop=articleBody] > .container > .sidebar.sticky-aside {
+      position: sticky;
+      top: 85px;
+      align-self: flex-start; }
+      div[itemprop=articleBody] > .container > .sidebar.sticky-aside:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: calc(var(--content-padding) * -1);
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: -1;
+        box-shadow: 0px 20px 40px #0000000D; }
+    div[itemprop=articleBody] > .container > .sidebar .status {
+      margin-top: 21px;
+      color: var(--primary-color);
+      font-size: 12px; }
+    div[itemprop=articleBody] > .container > .sidebar .title {
+      font-weight: 500;
+      color: #000;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 10px 0 40px;
+      padding: 0; }
+      div[itemprop=articleBody] > .container > .sidebar .title.solid {
+        font-size: 21px;
+        line-height: 32px;
+        display: block;
+        font-weight: 700; }
+      div[itemprop=articleBody] > .container > .sidebar .title .lead {
+        font-size: 32px;
+        line-height: 36px;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 8px; }
+    div[itemprop=articleBody] > .container > .sidebar .kierownik {
+      margin: 40px 0 0; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .btn {
+        width: 100%; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik div {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik > div {
+        display: flex;
+        gap: 10px;
+        color: var(--text-color); }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .imie-i-nazwisko > div {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px 0;
+        color: #000; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .email {
+        margin-top: auto; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .biogram-info {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        padding: 5px 0; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .project-role {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 16px 0 0;
+        margin: 24px 0 0;
+        border-top: 1px solid #E8F3F8;
+        color: #000; }
+      div[itemprop=articleBody] > .container > .sidebar .kierownik .bioinfo {
+        padding: 12px 0 16px; }
+        div[itemprop=articleBody] > .container > .sidebar .kierownik .bioinfo p {
+          font-size: 12px;
+          margin: 0; }
+        div[itemprop=articleBody] > .container > .sidebar .kierownik .bioinfo:not(:last-child) {
+          margin: 0 0 24px;
+          border-bottom: 1px solid #E8F3F8; }
+    @media (max-width: 1199px) {
+      div[itemprop=articleBody] > .container > .sidebar {
+        display: none; } }
+  div[itemprop=articleBody] > .container > .col-right {
+    position: relative;
+    padding: 0 0 24px 72px;
+    max-width: calc(100% - 350px);
+    flex: 1 0 calc(100% - 350px); }
+    @media (max-width: 1199px) {
+      div[itemprop=articleBody] > .container > .col-right {
+        max-width: 100%;
+        flex: 1;
+        padding-left: 0; } }
+  div[itemprop=articleBody] > .container .intro {
+    font-weight: 400; }
+    div[itemprop=articleBody] > .container .intro p {
+      text-align: left !important; }
+  div[itemprop=articleBody] > .container .program-naglowek {
+    background-image: none !important; }
+  div[itemprop=articleBody] > .container .zespol h3,
+  div[itemprop=articleBody] > .container .powiazane h3 {
+    display: block; }
+  div[itemprop=articleBody] > .container .cp-tags,
+  div[itemprop=articleBody] > .container .konferencja-naglowek,
+  div[itemprop=articleBody] > .container .biotitleandnames,
+  div[itemprop=articleBody] > .container .cytatnowosciwydawnicze {
+    display: none; }
+  div[itemprop=articleBody] > .container.publikacje {
+    margin-top: 40px; }
+    div[itemprop=articleBody] > .container.publikacje .infoBox {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      order: 1; }
+      div[itemprop=articleBody] > .container.publikacje .infoBox img {
+        width: 100%;
+        height: auto;
+        order: 1; }
+      div[itemprop=articleBody] > .container.publikacje .infoBox h3 {
+        padding: 0;
+        margin: 24px 0 0; }
+      div[itemprop=articleBody] > .container.publikacje .infoBox a {
+        font-size: 14px; }
+      div[itemprop=articleBody] > .container.publikacje .infoBox > * {
+        order: 2; }
+    div[itemprop=articleBody] > .container.publikacje .col-right {
+      order: 2; }
+    div[itemprop=articleBody] > .container.publikacje h2 {
+      padding: 0; }
+    div[itemprop=articleBody] > .container.publikacje a {
+      color: #000;
+      line-height: 24px;
+      font-size: 16px; }
+      div[itemprop=articleBody] > .container.publikacje a.btn {
+        color: #fff;
+        width: 100%; }
+        div[itemprop=articleBody] > .container.publikacje a.btn:after {
+          color: #000; }
+    div[itemprop=articleBody] > .container.publikacje span {
+      margin-top: 8px;
+      display: block;
+      color: #A5A5A6;
+      font-size: 14px;
+      line-height: 17px; }
+    div[itemprop=articleBody] > .container.publikacje li {
+      margin: 0 0 24px 0; }
+
+.projektautomatyczny .breadcrumbs {
+  display: none; }
+
+.cp-tags .cp-tag {
+  margin-right: 5px; }
+
+/******************/
+/*kopia z coworkers*/
+.zespol {
+  font-size: 12px;
+  position: relative; }
+  .zespol .items {
+    display: flex;
+    flex-wrap: wrap; }
+  .zespol .item {
+    border: 1px solid #efefef;
+    padding: 16px;
+    border-radius: 2px;
+    background: #fff;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    display: inline-flex !important; }
+    .zespol .item .bioinfo {
+      display: block; }
+    .zespol .item > div:not([class]) {
+      max-width: calc(100% - 124px); }
+  .zespol .fields {
+    flex-grow: 1;
+    max-width: calc(100% - 5rem); }
+    .zespol .fields .label,
+    .zespol .fields > div {
+      display: none; }
+    .zespol .fields > div.imie-i-nazwisko, .zespol .fields > div.tytul {
+      display: block; }
+    .zespol .fields > div.imie-i-nazwisko {
+      font-weight: 400;
+      font-family: var(--bold-font);
+      font-size: 1rem;
+      color: #000; }
+  .zespol img {
+    width: 6.875rem;
+    height: 6.875rem;
+    object-fit: cover;
+    border-radius: .125rem;
+    margin-right: 0.625rem; }
+
+.adresinfo {
+  width: 100%; }

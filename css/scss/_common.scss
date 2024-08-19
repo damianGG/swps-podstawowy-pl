@@ -1,4 +1,7 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 
@@ -41,12 +44,12 @@ html {
 
 body {
   font-family: var(--primary-font);
-  background: #FBFBFB;
+  background: white;
   padding-top: 85px;
   position: relative;
   letter-spacing: 0.7px;
-  // overflow-x: hidden;
 
+  // overflow-x: hidden;
   &.theme-red1 {
     --link-color: #AE1917;
     --primary-color: #AE1917;
@@ -272,9 +275,7 @@ body {
     }
   }
 
-  &.btn-white {
-
-  }
+  &.btn-white {}
 
   &.btn-large {
     min-height: 56px;
@@ -326,26 +327,28 @@ button {
 }
 
 ul.breadcrumbs {
-	display: flex;
-	list-style: none !important;
-	padding: 24px 0 0;
+  display: flex;
+  list-style: none !important;
+  padding: 24px 0 0;
   margin: 0;
   overflow-x: auto;
 
   li {
-  	letter-spacing: 1.5px;
-  	font-weight: 500;
-  	font-size: 11px;
-  	line-height: 15px;
-  	margin-right: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 5px;
     color: #000;
     padding: 0;
 
-    &:before {content: none}
+    &:before {
+      content: none
+    }
 
     a {
       text-decoration: none;
-    	color: var(--link-color);
+      color: var(--link-color);
       white-space: nowrap;
     }
 
@@ -369,8 +372,8 @@ ul.breadcrumbs {
   @media (max-width: 599px) {
     white-space: nowrap;
     padding-bottom: 15px;
-    // overflow-x: scroll;
 
+    // overflow-x: scroll;
     li {
       display: none;
 
@@ -386,13 +389,16 @@ hr {
   margin: 30px 0;
   width: 100%;
 
-  + hr {display: none}
+  +hr {
+    display: none
+  }
 }
 
 blockquote {
   position: relative;
 
   @media (min-width: 1200px) {
+
     .left-ornament,
     .right-ornament {
       top: -35px;
@@ -430,10 +436,15 @@ blockquote {
     line-height: 1.5;
     margin-top: 0;
 
-    &:only-child {margin: 0}
+    &:only-child {
+      margin: 0
+    }
   }
 
-  hr {margin: 40px 0 16px; max-width: 80px;}
+  hr {
+    margin: 40px 0 16px;
+    max-width: 80px;
+  }
 
   footer {
     opacity: .6;
@@ -466,7 +477,9 @@ blockquote {
 }
 
 .category-list>div,
-.category.table {width: 100%}
+.category.table {
+  width: 100%
+}
 
 .minicytat span,
 .wypowiedz p:nth-child(n) {
@@ -478,6 +491,12 @@ blockquote {
   @media (min-width: 480px) {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media (min-width: 480px) {
+  .podyplomowe .wypowiedz p:nth-child(n) {
+    font-size: 1rem;
   }
 }
 
@@ -519,7 +538,10 @@ blockquote {
 .wypowiedz {
   margin: 56px 0 56px 105px;
 
-  p + &, & + & {margin-top: 0}
+  p+&,
+  &+& {
+    margin-top: 0
+  }
 
   @media (max-width: 599px) {
     margin-left: 70px;
@@ -561,7 +583,7 @@ div.podpis {
     }
   }
 
-  > div {
+  >div {
     display: flex;
     gap: 10px;
     color: var(--text-color);
@@ -569,17 +591,21 @@ div.podpis {
     background: transparent;
   }
 
-  > div > div {
+  >div>div {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 
     @media (max-width: 480px) {
       height: 36px;
+      flex-direction: unset;
+      justify-content: flex-start;
     }
   }
 
-  .tytul {margin-right: 4px;}
+  .tytul {
+    margin-right: 4px;
+  }
 
   .tytul,
   .imie-i-nazwisko {
@@ -591,7 +617,9 @@ div.podpis {
     margin: 0;
   }
 
-  .tytul + .imie-i-nazwisko {margin-left: 4px}
+  .tytul+.imie-i-nazwisko {
+    margin-left: 4px
+  }
 
   // .tytul,
   // .imie-i-nazwisko,
@@ -609,25 +637,31 @@ div.podpis {
   }
 }
 
+.podyplomowe div.podpis img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
 .appla {
-	top: -100%;
+  top: -100%;
   left: 0;
   right: 0;
   height: 100vh;
   z-index: 16;
-	position: fixed;
-	background: #000;
-	opacity: .85;
+  position: fixed;
+  background: #000;
+  opacity: .85;
   visibility: hidden;
   transition: 1s;
   cursor: pointer;
 
   &.on {
-  	top: 0;
+    top: 0;
     visibility: visible;
   }
 
-  &.close-menu, &.no-animation {
+  &.close-menu,
+  &.no-animation {
     transition: 0s;
   }
 
@@ -666,6 +700,7 @@ div.podpis {
   align-items: center;
   box-sizing: border-box;
   transition: .5s;
+  background-color: white;
 
   &:before {
     content: $icon-close;
@@ -686,7 +721,9 @@ div.podpis {
   gap: 24px;
 
   li {
-    &:before {content: none}
+    &:before {
+      content: none
+    }
 
     // display: flex;
     // justify-content: center;
@@ -750,7 +787,7 @@ table {
 
     tr {
       height: 60px;
-      background: #FBFBFB;
+      background: #FCFCFC;
 
       &:nth-child(2n - 1) {
         background: var(--primary-color-opacity);
@@ -762,13 +799,18 @@ table {
     }
   }
 
-  td, th {padding: 10px 15px}
+  td,
+  th {
+    padding: 10px 15px
+  }
 
   .list-hits {
     min-width: 140px;
   }
 
-  .list-author {white-space: nowrap;}
+  .list-author {
+    white-space: nowrap;
+  }
 }
 
 .faq-wrapper {
@@ -796,7 +838,7 @@ table {
     }
   }
 
-  + .faq-wrapper {
+  +.faq-wrapper {
     border-top: none;
   }
 }
@@ -806,7 +848,9 @@ table {
   overflow: hidden;
   transition: 400ms;
 
-  >div {padding: 0 0 1px;}
+  >div {
+    padding: 0 0 1px;
+  }
 }
 
 .kafle {
@@ -816,7 +860,8 @@ table {
   row-gap: 18px;
   margin: 0 0 40px;
 
-  .big-kafel, .small-kafel {
+  .big-kafel,
+  .small-kafel {
     background-position: center;
     display: inline-flex;
     color: #fff;
@@ -900,27 +945,35 @@ br {
   &.mobile-320 {
     display: none;
 
-    @media (max-width: 320px) {display: inline-block;}
+    @media (max-width: 320px) {
+      display: inline-block;
+    }
   }
 
   &.mobile-480 {
     display: none;
 
-    @media (max-width: 480px) {display: inline-block;}
+    @media (max-width: 480px) {
+      display: inline-block;
+    }
   }
 }
 
 .banner-slider {
   max-width: 100%;
-  // height: 100%;
 
+  // height: 100%;
   &.absolute-slider {
     @include absolute_full_width();
 
-    img {max-height: none}
+    img {
+      max-height: none
+    }
   }
 
-  a {display: inline-block;}
+  a {
+    display: inline-block;
+  }
 
   img {
     width: 100%;
@@ -968,7 +1021,8 @@ br {
     transform: translateX(-50%);
   }
 
-  p, button {
+  p,
+  button {
     font-size: 12px;
     line-height: 18px;
     margin-top: 0;

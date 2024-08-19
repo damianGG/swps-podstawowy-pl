@@ -12,7 +12,9 @@
     color: #999 !important;
   }
 
-  strong {color: inherit}
+  strong {
+    color: inherit
+  }
 
   p {
     font-size: 14px;
@@ -29,13 +31,17 @@
     }
   }
 
-  small {font-size: 12px;}
+  small {
+    font-size: 12px;
+  }
 
   hr {
     width: 80px;
     border: 1px solid #5C5C5D;
 
-    &:last-child {display: none}
+    &:last-child {
+      display: none
+    }
   }
 
   .container {
@@ -63,7 +69,7 @@
         }
       }
 
-      &:nth-child(n+2){
+      &:nth-child(n+2) {
         display: flex;
         flex-wrap: wrap;
         padding: 0 0 32px;
@@ -85,7 +91,9 @@
         width: 100%;
       }
 
-      &:empty {display: none;}
+      &:empty {
+        display: none;
+      }
     }
 
     @media (min-width: 769px) {
@@ -107,7 +115,7 @@
           left: -70px;
         }
 
-        &:nth-child(n+2){
+        &:nth-child(n+2) {
           padding-right: 0;
 
           >div {
@@ -141,15 +149,17 @@ p.w-i {
 }
 
 #footer {
-	background: #000;
-	color: #fff;
+  background: #000;
+  color: #fff;
   padding: 30px 0;
   margin: 0 auto;
   max-width: 100%;
   display: flex;
   letter-spacing: 0;
 
-  strong {color: inherit}
+  strong {
+    color: inherit
+  }
 
   p {
     margin: 0;
@@ -159,12 +169,30 @@ p.w-i {
   }
 
   a {
-  	color: #fff;
+    color: #fff;
   }
 
   img {
     object-fit: cover;
   }
+
+  ul>li::before {
+    display: none;
+    padding-left: 0
+  }
+
+  ul>li {
+    padding-left: 0
+  }
+
+  ul li {
+    margin: 0;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.5rem;
+  }
+
+
 
   .container>div {
     flex: 1;
@@ -181,6 +209,7 @@ p.w-i {
         border-right: 2px solid #5D5D5D;
       }
     }
+
     @media (max-width: 1199px) {
       &:not(:last-child) {
         border-bottom: 2px solid #5D5D5D;

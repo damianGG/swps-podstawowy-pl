@@ -1,0 +1,719 @@
+.fields-container {
+	display: 					none;
+}
+div[itemprop=articleBody] {
+	/*  */
+	
+}
+.biogram-naglowek .inner {
+	margin: 					0 auto;
+	width: 						var(--content-width);
+	max-width: 					100%;
+}
+div[itemprop=articleBody] > .inner {
+
+	padding: 					100px 32px 32px 32px;
+	margin: 					0 auto;
+	background: 				var(--bg-color);
+	width: 						var(--content-width);
+	max-width: 					100%;
+	box-sizing: 				border-box;
+}
+div[itemprop=articleBody] > .inner > * {
+	margin-left: 				calc(128px + 292px); /* gap z nagłówka + szer zdjęcia */
+}
+.biogram-naglowek {
+	background: 				#000;
+	color: 						#fff;
+	position: 					relative;
+}
+.biogram-naglowek .inner {
+	display: 					flex;
+	gap: 						128px;
+	padding: 					32px;
+	box-sizing: 				border-box;
+}
+.biogram-naglowek .inner > div:not(.img) {
+	display: 					flex;
+	flex-direction: 			column;
+	border-top: 				1px solid #5E5E5F;
+	flex-grow: 					1;
+	flex-shrink: 				1;
+	padding-top: 				58px;
+}
+.biogram-naglowek .inner div .tytul {
+	order: 						1;
+	margin: 					0;
+	color: 						#8b8b8c;
+	font-family: 				var(--bold-font-book);
+}
+.biogram-naglowek .inner div h2 {
+	order: 						2;
+	font-family: 				var(--bold-font);
+	font-weight: 				normal;
+	font-size: 					32px;
+	line-height: 				48px;
+	margin: 					8px 0;
+}
+.biogram-naglowek .inner div .stanowisko {
+	order: 						5;
+}
+.biogram-naglowek .inner div .stanowisko * {
+	font-weight: 				normal;
+	}
+.biogram-naglowek .inner div .stanowisko {
+	font-family: 				var(--bold-font-book);
+	color: 						#8B8B8C;
+	font-size: 					14px;
+	margin: 					0;
+	padding: 					40px 0;
+}
+/*.biogram-naglowek .inner div .stanowisko strong:first-child */
+.biogram-naglowek .inner div .prawnik-trawnik {
+	display: 					block;
+	border-top: 				1px solid #5E5E5F;
+	border-bottom: 				1px solid #5E5E5F;
+	margin: 					32px 0 0;
+	padding: 					12px 0;
+	color: 						#fff;
+	order: 						4;
+}
+.biogram-naglowek .inner div .email {
+	order: 						3;
+	font-family: 				var(--bold-font-book);
+	margin: 					0;
+}
+.biogram-naglowek .inner div .email a:after {
+	content: 					'';
+	background-image:  			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+.biogram-naglowek .inner div .soclinki {
+	order: 						6;
+	flex-wrap: 					wrap;
+}
+.biogram-naglowek .inner div .soclinki .wspolpraca,
+.biogram-naglowek .inner div .soclinki .projekty,
+.biogram-naglowek .inner div .soclinki .publikacje {	
+	display: 					none;
+}
+.biogram-naglowek .inner div .soclinki .bio-lang {
+	position: 					absolute;
+	top: 	  					52px;
+	font-family: 				var(--bold-font-book);
+	font-weight: 				normal;
+}
+.biogram-naglowek .inner div .soclinki .bio-lang a {
+	color: 						var(--link-color) !important;
+	font-size: 					16px !important;
+	text-align: 				right;
+	margin-right: 				0;
+}
+.biogram-naglowek .inner div .soclinki  .bio-lang img {
+	height: 					24px;
+	width: 						auto;
+	margin-right: 				10px;
+	vertical-align: 			middle;
+}
+.biogram-naglowek .inner div .soclinki  .bio-lang:after {
+	content: 					'';
+	background-image: 			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+
+.biogram-naglowek .img img {
+	width: 						288px;
+	height: 					288px;
+	object-fit: 				cover;
+	border: 					2px solid #343434;
+}
+.biogram-naglowek ul.linki {
+	list-style: 				none;
+	padding: 					0;
+}
+.biogram-naglowek ul.linki a {
+	display: 					block;
+}
+.biogram-naglowek ul.linki a.pakiet,
+.biogram-naglowek ul.linki a.zapytaj {
+	padding: 					8px;	
+	text-align: 				center;
+	font-family: 				var(--bold-font-book);
+	font-size: 					14px;
+	letter-spacing: 			1.75px;
+}
+.biogram-naglowek ul.linki a.pakiet {
+	background: 				var(--link-color);
+	color: 						#fff;	
+	margin-bottom: 				16px;
+}
+.biogram-naglowek ul.linki a.zapytaj {
+	border: 					1px solid var(--link-color);
+	color: 						var(--link-color);
+	text-align: 				center;
+}
+.biogram-naglowek .inner h3 {
+	display: 					none;
+}
+.biogram-naglowek .inner {
+	padding-bottom: 			0;
+}
+.biogram-naglowek #inner-2 {	
+	gap: 						0;
+	padding-top: 				0;	
+}
+.biogram-naglowek #inner-2 > div {
+	padding-top: 				0;
+	border-top: 				1px solid #5E5E5F;;
+}
+.biogram-naglowek #inner-2 > div:first-child {
+	flex-grow: 					0;
+	flex-shrink: 				1;
+	padding-top: 				0;
+	width: 						288px;
+	padding: 					16px 0px;
+}
+.biogram-naglowek #inner-2 .completeBio {
+	color: 						var(--link-color);
+	font-size: 					14px;
+	font-family: 				var(--bold-font-book);
+	font-weight: 				normal;
+	cursor: 					pointer;
+}
+.biogram-naglowek #inner-2 .completeBio span:after {
+	content: 					'';
+	background-image: 			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+.biogram-naglowek #inner-2 > div:nth-child(2) {
+	padding-left: 				128px;
+}
+.biogram-notka strong {
+	color: 						var(--strong-color);
+	font-weight: 				700;
+}
+.biogram-naglowek .soclinki {
+	list-style: 				none;
+	display: 					flex;
+	padding: 					0;
+	/*display: none!important;*/	
+}
+.biogram-naglowek .soclinki a {
+	margin-right: 				30px;
+	color: 						#fff;
+	font-family: 				var(--bold-font-reg);
+	font-size: 					12px;
+}
+.biogram-naglowek .soclinki a i { 
+	margin-right: 				8px;
+    background: 				var(--link-color);
+    color: 						black;
+    border-radius: 				50%;
+    padding: 					4px 5px 4px 4px;
+    width: 						10px;
+    height: 					10px;
+    text-align: 				center;
+}
+.biogram-naglowek .soclinki .orcid a i {
+	background: 				#000;
+	color: 						var(--link-color);
+	font-size: 					18px !important;
+}
+.biogram-naglowek-duplicate {
+	display: 					none;
+}
+.biogram-naglowek-duplicate {
+	top: 						0;	
+	width: 						350px;
+	background: 				#fff;
+	color: 						#000;
+	border-right: 				1px solid #e7e6e6;
+	overflow: 					auto;
+	padding: 					32px;
+	box-sizing: 				border-box;
+	flex-direction: 			column;
+	height: 					100%;
+}
+.biogram-naglowek-duplicate.above, 
+.biogram-naglowek-duplicate.below {
+	display: 					flex;
+}
+.biogram-naglowek-duplicate.above {
+	position: 					fixed;
+}
+.biogram-naglowek-duplicate.below {
+	position: 					absolute;
+	justify-content: 			flex-end;
+}
+.biogram-naglowek-duplicate .img {
+	display: 					flex;
+	order: 						1;
+	align-items: 				center;
+}
+.biogram-naglowek-duplicate .img img {
+	width: 						80px;
+	height: 					80px;
+	object-fit: 				cover;
+}
+.biogram-naglowek-duplicate h3,
+.biogram-naglowek-duplicate .stanowisko {
+	display: 					none;
+}
+.biogram-naglowek-duplicate h2,
+.biogram-naglowek-duplicate .tytul {
+	line-height: 				1;
+	margin: 					0 0 5px 0;
+	padding-left: 				16px;
+}
+.biogram-naglowek-duplicate .tytul {
+	font-size: 					12px;
+	font-family: 				var(--font-bold-book);
+}
+.biogram-naglowek-duplicate h2 {
+	font-size: 					16px;
+	font-family: 				var(--bold-font);
+	font-weight: 				normal;
+}
+.biogram-naglowek-duplicate .email {
+	order: 						2;
+	font-size: 					12px;
+	font-family: 				var(--font-bold-book);
+	margin: 					0;
+}
+.biogram-naglowek-duplicate .email a:after {
+	content: 					'';
+	background-image:  			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+	white-space: 				nowrap;
+}
+.biogram-naglowek-duplicate .bw {
+	order: 						3;
+	list-style: 				none;
+	padding: 					24px 0;
+	font-family: 				var(--bold-font);
+	font-size: 					16px;
+	line-height: 				26px;
+	margin-top: 				0;
+}
+.biogram-naglowek-duplicate .bw a {
+	color: 						#000;
+}
+.biogram-naglowek-duplicate .bw a:after {
+	content: 					'';
+	background-image:  			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+.biogram-naglowek-duplicate .soclinki {
+	order: 						4;
+	list-style: 				none;
+	padding: 					0;
+	column-count: 				2;
+}
+.biogram-naglowek-duplicate .soclinki a {
+	margin-right: 				30px;
+	margin-top: 				0;
+	color: 						#000;
+	font-family: 				var(--bold-font-reg);
+	font-size: 					14px;
+	white-space: 				nowrap;
+}
+.biogram-naglowek-duplicate .soclinki a i { 
+	margin-right: 				8px;
+    background: 				var(--link-color);
+    border-radius: 				50%;
+    padding: 					4px;
+    width: 						10px;
+    height: 					10px;
+    text-align: 				center;
+	color: 						#fff;
+	font-size: 					12px;
+}
+.biogram-naglowek-duplicate .soclinki .orcid a i {
+	background: 				#fff;
+	color: 						var(--link-color);
+	font-size: 					18px !important;
+}
+.biogram-naglowek-duplicate .linki {
+	order: 						5;
+	list-style: 				none;
+	padding: 					0 0 22px 0;
+	margin-top: 				10px;
+	margin-bottom: 				5px;
+}
+.biogram-naglowek-duplicate .linki a {
+	display: 					block;
+	text-align: 				center;
+	font-family: 				var(--bold-font-book);
+	font-size: 					12px;
+	padding: 					6px;
+	letter-spacing: 			1.75px;
+}
+.biogram-naglowek-duplicate ul.linki a.pakiet {
+	background: 				var(--link-color);
+	color: 						#fff;
+	margin-bottom: 				16px;
+}
+.biogram-naglowek-duplicate ul.linki a.zapytaj {
+	border: 					1px solid var(--link-color);
+	color: 						var(--link-color);
+}
+.biogram-naglowek-duplicate .email,
+.biogram-naglowek-duplicate .soclinki {
+	padding-bottom: 			10px;
+}
+.biogram-naglowek-duplicate .email,
+.biogram-naglowek-duplicate .bw,
+.biogram-naglowek-duplicate .soclinki,
+.biogram-naglowek-duplicate .linki {
+	border-bottom: 				1px solid #e7e6e6;
+}
+.biogram-naglowek-duplicate .bio-lang {
+	order: 						7;
+	list-style: 				none;
+	border-bottom: 				1px solid #e7e6e6;
+	padding: 					8px 0;
+	font-size: 					14px;
+	font-family: 				var(--bold-font-book);
+}
+.biogram-naglowek-duplicate .bio-lang img {
+	height: 					24px;
+	width: 						auto;
+	margin-right: 				5px;
+	vertical-align: 			middle;
+}
+.biogram-naglowek-duplicate .bio-lang:after {
+	content: 					'';
+	background-image: 			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+.biogram-naglowek-duplicate .prawnik-trawnik {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .biogram-dla-mediow h3 {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .biogram-dla-mediow .linki {
+	display: 					none;
+}
+.uzupelnijbiogram.unfoldable > div {
+	top: 						-100%;
+	left: 						50%;	
+	position: 					fixed;
+	width: 						400px;
+	border: 					1px solid #000;
+	padding: 					100px 100px 50px 100px;
+	background: 				#fff;
+	transform: 					translate(-50%, -50%);
+	border-radius: 				4px;
+	transition-duration: 		1s;
+	color: 						#000;
+}
+.uzupelnijbiogram.unfoldable > div.on {
+	top: 						50%;
+	z-index: 					9999;
+}
+.biogram-naglowek-duplicate .button,
+.biogram-naglowek-duplicate .uzupelnijbiogram.unfoldable {
+	order: 						8;
+	margin-top: 				12px;
+}
+.biogram-naglowek-duplicate .button, 
+.uzupelnijbiogram.unfoldable .button {
+	color: 						var(--link-color);
+	cursor: 					pointer;
+	font-family: 				var(--bold-font-book);
+	font-size: 					14px;
+}
+.biogram-naglowek-duplicate .button:after, 
+.uzupelnijbiogram.unfoldable .button:after {
+	content: 					'';
+	background-image:  			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+div[itemprop=articleBody] > .inner ul {
+	list-style-image: 			url("../../../images/layout/biogram/circle.svg");
+}
+div[itemprop=articleBody] > .inner li a {
+	color: 						#5E5E5F
+}
+div[itemprop=articleBody] > .inner li a:after {
+	content: 					'';
+	background-image:  			url("../../../images/layout/biogram/arrow.svg");
+	width: 						13px;
+	height: 					12px;
+	background-repeat: 			no-repeat;
+	display: 					inline-block;
+	margin-left: 				10px;
+	vertical-align: 			middle;
+	background-size: 			10px auto;
+}
+div[itemprop=articleBody] > .inner h4,
+div[itemprop=articleBody] > .inner h3 {
+	color: 						#000;
+	font-size: 					24px;
+	line-height: 				32px;
+	margin-bottom: 				32px;
+	padding-top: 				80px;
+	border-top: 				1px solid #dfdede;
+	font-family: 				var(--bold-font-medium);
+	font-weight: 				normal;
+}
+div[itemprop=articleBody] > .inner .biogram-dla-mediow p {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .biogram-notka h3:first-child {
+	padding-top: 				0;
+	border-top: 				none;
+}
+div[itemprop=articleBody] > .inner .profil-naukowy h3:first-child {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .cp-tags {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .informacje-prasowe {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .coworkers h3,
+div[itemprop=articleBody] > .inner .powiazane h3 {
+	display: 					block;
+}
+div[itemprop=articleBody] > .inner .powiazane > ul {
+	padding: 					0;
+}
+div[itemprop=articleBody] > .inner .powiazane > ul > li {
+	color: 						#000;
+	list-style: 				none;
+	font-family: 				var(--bold-font);
+	font-weight: 				normal;
+	font-size: 					18px;
+	line-height: 				26px;
+}
+div[itemprop=articleBody] > .inner .powiazane  ul ul {
+	margin-top: 				16px;
+	margin-bottom: 				16px;
+}
+div[itemprop=articleBody] > .inner .powiazane  li li {
+	font-family: 				var(--primary-font);
+	font-size: 					16px;
+	line-height: 				32px;
+}
+div[itemprop=articleBody] > .inner .coworkers {
+	font-size: 12px;
+	line-height: 1.6;
+}
+div[itemprop=articleBody] > .inner .coworkers .items {
+	display: 					flex;
+	flex-wrap: 					wrap;
+	gap: 						16px;
+}
+div[itemprop=articleBody] > .inner .coworkers .item {
+	border: 					1px solid #EFEFEF;
+	padding: 					10px;
+	border-radius: 				2px;
+	background: 				#fff;
+	width: 						calc(50% - 32px);
+	display: 					flex;
+	position: 					relative;
+}
+div[itemprop=articleBody] > .inner .coworkers .item a.bio span {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .coworkers .item a.bio {
+	width: 						24px;
+	height: 					24px;
+	background-image: 			url("../../../images/common/bio-active.svg");
+	display: 					inline-block;
+	position: 					absolute;
+	top: 						10px;
+	right: 						10px;
+}
+
+div[itemprop=articleBody] > .inner .coworkers .item a.email span {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .coworkers .item a.email  {
+	width: 						24px;
+	height: 					24px;
+	background-image: 			url("../../../images/common/mail-active.svg");
+	display: 					inline-block;
+	position: 					absolute;
+	top: 						10px;
+	right: 						40px;
+}
+div[itemprop=articleBody] > .inner .coworkers .fields {
+	flex-grow: 					1;
+	align-self: 				center;
+}
+div[itemprop=articleBody] > .inner .coworkers .fields .label,
+div[itemprop=articleBody] > .inner .coworkers .fields > div {
+	display: 					none;
+}
+div[itemprop=articleBody] > .inner .coworkers .fields > div.tytul,
+div[itemprop=articleBody] > .inner .coworkers .fields > div.imie-i-nazwisko {
+	display: 					block;
+}
+div[itemprop=articleBody] > .inner .coworkers .fields > div.tytul {
+	font-weight: 				normal;
+	font-family: 				var(--bold-font-light);
+	font-size: 					12px;
+	color: 						#666;
+}
+div[itemprop=articleBody] > .inner .coworkers .fields > div.imie-i-nazwisko {
+	font-weight: 				normal;
+	font-family: 				var(--bold-font);
+	font-size: 					16px;
+	color: 						#000;
+}
+div[itemprop=articleBody] > .inner .coworkers  img {
+	width: 						110px;
+	height: 					110px;
+	object-fit: 				cover;
+	border-radius: 				2px;
+	margin-right: 				10px;
+}
+.moduletable.breadcrumbs {
+	margin-top: 				-100px;
+	margin-bottom: 				100px;
+}
+ul.breadcrumb.breadcrumbs {
+	display: 					flex;
+	list-style: 				none !important;
+	padding: 					0;
+}
+ul.breadcrumb.breadcrumbs li {
+	letter-spacing: 			1.5px;
+	font-family: 				var(--bold-font-medium);
+	font-size: 					10px;
+	font-weight: 				normal;
+	line-height: 				15px;
+	margin-right: 				5px;
+}
+ul.breadcrumb.breadcrumbs li a {
+	color: 						var(--link-color) !important;
+}
+ul.breadcrumb.breadcrumbs li a:after {
+	background-image: 			url("../../../images/layout/biogram/arrow-black.svg") !important;
+	background-size: 			7px auto !important;
+	vertical-align: 			bottom !important;
+}
+.biogram-naglowek ul.linki a.pakiet,
+.biogram-naglowek ul.linki a.zapytaj,
+.biogram-naglowek .img img,
+.biogram-naglowek-duplicate .img img,
+.biogram-naglowek-duplicate .linki a {
+	border-radius: 				2px;
+}
+.appla {
+	top: 						-100%;
+	position: 					fixed;
+	width: 						100vw;
+	height: 					100vh;
+	background: 				#000;
+	opacity: 					.75;
+}
+.appla.on {
+	top: 						0;
+	z-index: 					9998;
+	transition-duration: 		1s;
+}
+
+#mauticform_wrapper_biogramzgloszenie * {
+	font-size: 					16px;
+	line-height: 				24px;
+	font-family: 				var(--bold-font-book);
+	font-weight: 				normal;
+	color: 						#5E5E5F;
+}
+#mauticform_label_biogramzgloszenie_adres_email {
+	font-size: 					24px;
+	line-height: 				31px;
+	font-weight: 				normal;
+	font-family: 				var(--bold-font-medium);
+	color: 						#000;
+	margin-bottom: 				36px;
+}
+#mauticform_input_biogramzgloszenie_adres_email {
+	border-radius: 				4px;
+	margin: 					24px 0;
+	border: 					2px solid #5E5E5F;
+	padding: 					12px 22px;
+	font-size: 					12px;
+}
+#mauticform_input_biogramzgloszenie_submit {
+	text-align: 				center;
+	font-family: 				var(--bold-font-book);
+	font-size: 					14px;
+	letter-spacing: 			1.75px;
+	background: 				var(--link-color);
+	color: 						#fff;
+	margin: 					0px auto 16px auto;
+	display: 					block;
+	padding: 					13px 43px;
+	font-weight: 				normal;
+}
+.uzupelnijbiogram .close {
+	position: 					absolute;
+	top: 						20px;
+	right: 						20px;
+	cursor: 					pointer;
+	background-image: 			url("../../../images/common/close.svg");
+	width: 						20px;
+	height: 					20px;
+	background-color: 			#f2f2f2;
+	display: 					block;
+	outline: 					#f2f2f2 11px solid;
+	border-radius: 				50%;
+}
+.mauticform-errormsg {
+	color: 						#e32 !important;
+}
+#mauticform_wrapper_biogramzgloszenie.mauticform_wrapper.mauticform-post-success #mauticform_biogramzgloszenie * {
+	display: 					none;
+}
+#mauticform_wrapper_biogramzgloszenie.mauticform_wrapper.mauticform-post-success #mauticform_biogramzgloszenie #mauticform_biogramzgloszenie_message, 
+#mauticform_wrapper_biogramzgloszenie.mauticform_wrapper.mauticform-post-success .uzupelnijbiogram .close {
+	display: 					block;
+}

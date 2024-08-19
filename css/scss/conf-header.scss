@@ -1,0 +1,48 @@
+#top {
+    .container {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    img {
+        max-width: 8rem;
+        margin-right: 2rem;
+    }
+    figure {
+        display: flex;
+    }
+    .standard-nav {
+        display: flex;
+    }
+    .menu-call-actions-buttons {
+        display: flex;
+        align-items: center;
+        background-color: #363636;
+        padding-right: 5rem;
+        padding-left: 3rem;
+        transform: skew(335deg, 0deg);
+        margin-right: -3rem;
+        a {
+            transform: skew(25deg, 0deg);
+        }
+        button {
+            color: white;
+        }
+        .btn {
+            background-color: #F79421;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.875rem;
+            padding-right: 0.875rem;
+            letter-spacing: 0;
+            margin-right: 0.5rem;
+            min-height: none;
+            border-color: transparent;
+            min-height: 1rem;
+            width: 8rem;
+        }
+        .btn-ghost {
+            background-color: transparent;
+            border-color: white;
+        }
+    }
+}
